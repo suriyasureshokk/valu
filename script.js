@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1000);
         }, 600);
     });
-    
+
     // Enhanced typewriter effect
     let i = 0;
     function typeWriter() {
@@ -322,5 +322,27 @@ document.addEventListener('DOMContentLoaded', () => {
     song.addEventListener('ended', () => {
         song.currentTime = 0;
         song.play();
+    });
+
+    // Add this to your existing JavaScript
+    document.querySelector('.change-decision-btn').addEventListener('click', () => {
+        const celebration = document.querySelector('.celebration');
+        const lovePopup = document.querySelector('.love-popup');
+        const song = document.getElementById('song');
+        
+        // Stop the celebration song
+        song.pause();
+        song.currentTime = 0;
+        
+        // Hide celebration screen
+        celebration.style.display = 'none';
+        
+        // Reset popup text if it was changed
+        const h2 = lovePopup.querySelector('h2');
+        h2.textContent = 'Do you love me?';
+        h2.style.color = 'initial';
+        
+        // Show popup again
+        lovePopup.style.display = 'flex';
     });
 }); 
