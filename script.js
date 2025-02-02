@@ -90,9 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
             typeWriter();
             showPhotos();
             
-            // Show scroll message after a short delay
+            // Show scroll message for 3 seconds
             setTimeout(() => {
                 scrollMessage.style.opacity = '1';
+                // Hide scroll message after 3 seconds
+                setTimeout(() => {
+                    scrollMessage.style.opacity = '0';
+                }, 3000);
             }, 1000);
         }, 600);
     });
