@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             // Increased timing for slower typing
-            setTimeout(typeWriter, poem.charAt(i) === '\n' ? 800 : 100);
+            setTimeout(typeWriter, poem.charAt(i) === '\n' ? 600 : 75);
         } else {
             setTimeout(() => {
                 nextBtn.style.opacity = '1';
