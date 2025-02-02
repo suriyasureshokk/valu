@@ -28,13 +28,12 @@ document.addEventListener('DOMContentLoaded', () => {
     Unna neraiya hurt panni irukaen therunjo theriyaamalo🫂🫂🫂.
     Adhuku oru periyaaaa Sryyyyyyyyyyy.
     Inimae adhu nadakaama paathupaen, promise❤️❤️❤️.
-    Nee aasa patta edhaiyum ennala ippo thara mudiyaadhu aana andha naal kandippa uruvaakuvaen naa.
-    Enna nambu naa unna dhaan unna mattum dhaan kattuvaen❤️❤️❤️❤️🫂🫂🫂🫂🫂.
+    Enaku needhaan unaku naadhaan❤️❤️❤️❤️❤️.
 
     With lots of love❤️,
     Your cutie 🙈
     
-    Last varaikum scroll pannu`;
+    Keela scroll pannu`;
 
     const envelope = document.querySelector('.envelope');
     const letter = document.querySelector('.letter');
@@ -69,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const flap = document.querySelector('.envelope-flap');
         const letter = document.querySelector('.letter');
         const heartSeal = document.querySelector('.heart-seal');
+        const scrollMessage = document.querySelector('.scroll-message');
 
         // Start background music
         bgMusic.volume = 0.5;
@@ -89,6 +89,11 @@ document.addEventListener('DOMContentLoaded', () => {
             letter.style.display = 'block';
             typeWriter();
             showPhotos();
+            
+            // Show scroll message after a short delay
+            setTimeout(() => {
+                scrollMessage.style.opacity = '1';
+            }, 1000);
         }, 600);
     });
 
@@ -112,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 showPhotos();
             }
             
-            // Increased timing for slower typing
+            // Updated timing between previous (50ms) and current (100ms)
             setTimeout(typeWriter, poem.charAt(i) === '\n' ? 600 : 75);
         } else {
             setTimeout(() => {
