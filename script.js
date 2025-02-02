@@ -16,13 +16,25 @@ document.addEventListener('DOMContentLoaded', () => {
     Andha 2 days ah life long ah maatha naa ennala mudunja ellamae seivaen🫂🫂❤️.
     En life la rmbha aasai pattu nadandhu oru sila vishayathula nee onnu.
     Unna vidavae maataen😹😹😹. Evalo sandai vandhalum seri pesi theethukalaam.
+
+    Nee senja thappulaam enta sollumbodhu enaku kashtama irundhadhu 2 sec dhaan🫂🫂.
+    Aana andha 2 sec ku aprm un mela irundha love appadiyae 10x aayiduchu.
+    Enna piriya koodadhu nu nenachu adha marachu iruka idha vida enaku enna venum🥹🥹🥹❤️❤️❤️❤️❤️.
+    But inimae edhunaalum sollu unna vidavae maataen. Un ayisha fix aana madhiri dhaan naanum needhaanu fix aayitaen.
+    Loveeeeeeeee yoooooooouuuuuuuuu lotsssssss chellamaeyyyyyyyyyyyyyy❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️.
+    Innum sollitae polaam😁😁😁. Naama sera matom nu irundhu irundha ivalo dhooram laam vandhu irukaadhu unakae theriyum eppo venaalum namma piriyura madhiri chance irundhuchu.
+    Idhuvae samaalchutom idhuku mela samaalika mudiyaadha😁❤️❤️❤️❤️.
     
     Unna neraiya hurt panni irukaen therunjo theriyaamalo🫂🫂🫂.
     Adhuku oru periyaaaa Sryyyyyyyyyyy.
     Inimae adhu nadakaama paathupaen, promise❤️❤️❤️.
+    Nee aasa patta edhaiyum ennala ippo thara mudiyaadhu aana andha naal kandippa uruvaakuvaen naa.
+    Enna nambu naa unna dhaan unna mattum dhaan kattuvaen❤️❤️❤️❤️🫂🫂🫂🫂🫂.
 
     With lots of love❤️,
-    Your cutie 🙈`;
+    Your cutie 🙈
+    
+    Last varaikum scroll pannu`;
 
     const envelope = document.querySelector('.envelope');
     const letter = document.querySelector('.letter');
