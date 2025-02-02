@@ -77,17 +77,42 @@ body {
     margin: 0;
 }
 
+.envelope-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('asset/envelope-photo.jpg'); /* Add your photo here */
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
 .envelope-flap {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(135deg, #e0e0e0, #d0d0d0);
+    background-image: url('asset/26.jpg'); /* Same photo */
+    background-size: cover;
+    background-position: top center;
     clip-path: polygon(0 0, 50% 100%, 100% 0);
     transform-origin: top;
     transition: transform 0.5s ease;
     z-index: 3;
+}
+
+.envelope-flap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
 }
 
 .heart-seal {
@@ -705,7 +730,7 @@ body {
     z-index: 1;
 }
 
-/* Add these styles for the scroll message */
+/* Update scroll message styles */
 .scroll-message {
     position: fixed;
     top: 40px;
@@ -742,4 +767,16 @@ body {
     60% {
         transform: translateY(-10px);
     }
+}
+
+/* Add a semi-transparent overlay to make text readable */
+.envelope-front::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Adjust opacity as needed */
+    z-index: -1;
 } 
