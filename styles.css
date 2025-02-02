@@ -79,13 +79,11 @@ body {
 
 .envelope-front {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    background-image: url('asset/26.jpg');
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    background: linear-gradient(135deg, #e0e0e0, #d0d0d0);
     z-index: 2;
 }
 
@@ -769,6 +767,31 @@ body {
 
 /* Add a semi-transparent overlay to make text readable */
 .envelope-front::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: -1;
+}
+
+/* Add a new element for the bottom image */
+.envelope-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background-image: url('asset/26.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+/* Update overlay for bottom image */
+.envelope-bottom::after {
     content: '';
     position: absolute;
     top: 0;
