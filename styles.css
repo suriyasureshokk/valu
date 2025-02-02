@@ -707,8 +707,8 @@ body {
 
 /* Add these styles for the scroll message */
 .scroll-message {
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
     color: #ff6b6b;
@@ -717,7 +717,11 @@ body {
     opacity: 0;
     transition: opacity 0.5s ease;
     text-align: center;
-    z-index: 10;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .scroll-message .arrow {
@@ -725,6 +729,7 @@ body {
     font-size: 30px;
     animation: bounce 2s infinite;
     margin-top: 5px;
+    color: #ff4f4f;
 }
 
 @keyframes bounce {
