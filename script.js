@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 600);
     });
 
+    
     // Enhanced typewriter effect
     let i = 0;
     function typeWriter() {
